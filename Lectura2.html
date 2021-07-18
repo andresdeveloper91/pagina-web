@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Lectura2</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos1.css">
+		<link rel="stylesheet" href="css/Lectura1.css">	
+	</head>
+	<body>
+		<header>
+			<!-- Menu Desplegable-->
+			<center>
+				<nav class="navegacion">
+					<ul class="menu">
+						<li><a class="inicio" href="index.html">INICIO</a></li>
+
+						<li><a href="#">LECTURAS</a>
+							<ul class="submenu">
+								<li><a href="Lectura1.html">Lectura 1</a></li>
+								<li><a href="Lectura2.html">Lectura 2</a></li>
+								<li><a href="Lectura3.html">Lectura 3</a></li>
+								<li><a href="Lectura4.html">Lectura 4</a></li>
+								<li><a href="Lectura5.html">Lectura 5</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">MULTIMEDIA</a>
+							<ul class="submenu">
+								<li><a href="#">Multimedia 1</a>
+								<li><a href="#">Multimedia 2</a>
+							</ul>
+						</li>
+
+						<li><a href="#">ACTIVIDADES</a>
+							<ul class="submenu">
+								<li><a href="Actividad1.html">Actividad 1</a></li>
+								<li><a href="Actividad1.html">Actividad 2</a></li>
+								<li><a href="Actividad1.html">Actividad 3</a></li>
+							</ul>
+						</li>
+
+						<li><a href="Autores.html">AUTORES</a></li>
+					</ul>
+				</nav>
+			</center>
+		</header>
+		<center>
+			<img src="imagenes/ECBTI.png" alt="Trulli" width="" height="">
+		</center>
+		<div id="contenedor-titulo">
+			<div class="titulo">
+				<h1>CSS</h1>
+			</div>			
+		</div>
+		
+			<div class="cuerpo">			
+				<h1>Tips y metodologias de buenas practicas</h1>
+				<br>
+				<div class="logo-tema">
+					<img src="imagenes/css-logo.jpg">
+				</div>
+				<p>
+					En un mundo en constante evolución es muy común cometer errores que, por muy pequeños que sean, van arrastrándose y encarecen tanto la calidad de los proyectos como los procesos de trabajo. Por ello, hoy queremos introduciros en el mundo de las buenas prácticas de CSS mediante algunos tips.
+				</p>
+				<br>
+				<h2>Maquetación</h2>
+				<br>
+				<h3>Resetea las propiedades del CSS.</h3>
+				<br>
+				<p>
+					Antes de empezar a maquetar te recomendamos que resetees las propiedades de tu código css como paddings, margins, borders, las diferentes etiquetas etc. Esto puedes hacerlo de forma manual, o con alguna de las herramientas existentes, las más populares son: Normalize CSS, HTML5 Doctor Reset CSS, Yahoo! (YUI 3) Reset CSS, Universal Selector * Reset.
+				</p>
+				<br>
+			    <h2>Usa una sola hoja de estilo.</h2>
+				<br>
+				<p>
+					De este modo, además de concentrar toda la info en un mismo doc evitando repetir declaraciones de css, nos ayuda a optimizar el tiempo de carga, ya que tener una hoja de estilos por cada página sería cargar la misma información muchas veces innecesariamente.
+				</p>
+				<br>
+			    <h2>No uses estilos en línea.</h2>
+				<br>
+				<p>
+					Sobre todo por motivos relacionados con el SEO, Google penaliza estas prácticas. Además, dificulta el flujo de trabajo y hace repetir las mismas declaraciones en distintas partes del html para elementos cuyo estilo es común.
+				</p>
+				<br>
+			  	<h2> Sigue una jerarquía.</h2>
+				<br>
+				<p>Maqueta siempre con el mismo orden los atributos de las clases. Puedes seguir un orden alfabético o 			separarlos por tipos de selectores, por aspectos de colocación y diseño, etc.
+				<br>
+
+					Como las posibilidades son múltiples, tienes la opción de utilizar el orden con el que te sientas más cómodo.
+
+				</p>
+				<br>	
+			    <h2>Usa clases que tengan relación semántica con lo que se está maquetando.</h2>
+				<br>
+				<p>
+					No siempre vas a estar tu solo maquetando un proyecto o quizás tengas que retomarlo con el paso del tiempo, por eso es importante que las clases tengan un sentido con lo que se está maquetando, para facilitar la compresión del código. Si usas clases con nombres muy rebuscados o sin sentido, cuando se retome el proyecto o alguien nuevo entre en el proyecto no entenderá el usos de las clases y cómo se aplican de forma rápida, si no que tendrá que repasar todo el proyecto para entender la estructura.
+				</p>
+				<br>
+			    <h2>Usa guion medio en lugar de guion bajo </h2>
+				<br>
+				<p>Mejora la compatibilidad con todos los navegadores y Google lo interpreta mejor. Además, los editores de texto lo interpretan como una sola palabra.</p>
+				<br>
+			    <h2>No Repitas Código</h2>
+				<br>
+				<p>
+					Si dos elementos diferentes tienen el mismo estilo, no los declares dos veces, usa una sola declaración para ambos elementos separándolos mediante comas.
+
+					ejemplo:  
+
+					h1 {color: white;}
+
+					h2 {color: white;}
+
+					h1, h2 {color: white;}
+				</p>
+				<br>
+			   	<h2> Usa estilos en cascada siempre que sea posible, para reducir el número de clases e ID usados</h2>
+				<br>
+				<p>
+					Esto ayudar a reducir el número de instancias innecesarias, reduciendo el peso del proyecto. Además, es una buena herramienta de trabajo para ubicar un elemento dentro de la jerarquía html.
+				</p>
+				<br>
+			   	<h2> Usa siempre que se pueda clases en vez de ID</h2>
+				<br>
+				<p>
+					Los Id son sobre todo utilizados por los desarrolladores, para implementarlos en otros lenguajes de programación como Javascript o Angular. Además, los ID solo se pueden utilizar en un elemento, por lo que si más adelante queremos reciclar esas declaraciones no podremos y deberemos duplicar una de las instancias, aumentando el número de líneas que tenemos en nuestro código.
+				</p>
+				<br>
+			    <h2>No uses important</h2>
+				<br>
+				<p>
+					Nunca uses important, si necesitas usarlo en algún momento significa que algo no estas haciendo bien, revisa tu código e intenta subsanar el error.
+				</p>
+				<br>
+				<h2>Otras consideraciones a tener en cuenta</h2>
+				<br>
+			    <h3>Añade un índice y comentarios a tu hoja de estilos</h3>
+				<br>
+				<p>
+					Es bueno sobre todo si trabajas en equipo o el proyecto se va a alargar en el tiempo, que te crees un índice al comienzo de tu hoja de estilo, donde separes el contenido por bloques facilitando la navegación por el documento y ayudando a mantener su jerarquía.
+				</p>
+				<br>
+			  	<h2>Evita usar frameworks tipo bootstrap </h2>
+
+				<p>
+					Aumentan mucho el peso de la web, además crean instancias que no necesitamos. Nuestra recomendaciónes que crees tu framework a medida con los elementos que sabes que necesitas y vas a usar en todos tus proyectos. Otra opción si continuas queriendo usar un framework es importar solamente las partes que requiere tu proyecto, desechando así el código inútil que aumenta el peso de nuestros archivos.
+				</p>
+				<br>
+			   	<h2> Minimiza el CSS antes de subirlo.</h2>
+				<br>
+				<p>
+					Así facilitas la lectura del código a los navegadores, lo que supondrá una velocidad de carga más rápida.
+				</p>
+				<br>
+			    <h2>Valida El Código con W3C</h2>
+
+				<p>
+					Es muy importante que valides tu página antes de subirla, no solo te revelará errores de funcionamiento, también los errores de maquetación de cara a los navegadores.
+				</p>
+				<br>
+				<h2>Metodologías más utilizadas:</h2>
+				<br>
+				<h3>OOCSS</h3>
+
+				<p>
+					(Object Oriented CSS)
+
+					Desarrollada por Nicole Sullivan en 2008, esta metodología está basada en dos principios básicos: la separación de la estructura de los estilos visuales y la separación del contenedor y los contenidos.
+				</p>
+				<br>
+				<h2>BEM</h2>
+
+				<p>
+					(Block, Element, Modifier)
+
+					Lo primero que has de saber de BEM es que no utiliza etiquetas HTML o IDs como selectores, sino que los bloques y los elementos están definidos por selectores de clase.
+
+					Recomienda también no hacer uso de la clase unida a una etiqueta ya que hace que la regla CSS sea más específica y más difícil de sobrescribir; y aunque permitiría el uso del anidamiento, aconseja un uso limitado del mismo, ya que dificulta en exceso la reutilización del código.
+
+					Con estos principios, podemos pasar a definir los tres componentes en los que se basa este método: bloque, elemento y modificador.
+				</p>
+				<br>
+				<h2>SMACSS</h2>
+
+				<p>
+					(Scalable and Modular Architecture for CSS)
+
+					Desarrollado por Jonathan Snook, el método SMACSS consiste en organizar las reglas CSS en cinco categorías:
+
+			    	Base: estilos por defecto. 
+			    	Maquetación: divide el contenido en secciones, entendiendo que dentro de cada sección el contenido se dividirá en módulos.
+			    	Módulos: todos los elementos que se pueden reutilizar.
+			    	Estados: los estados de nuestros elementos como por ejemplo :active.
+			    	Temas: estilos visuales (opcional).
+				</p>
+				<div class="referencia">
+					https://www.gobalo.es/blog/diseno-web/buenas-practicas-de-css/
+				</div>
+			</div>
+			<footer>
+				<div class="pie">
+					Diseñado por estudiantes de Ingenieria de Sistemas de la Universidad Nacional Abierta y a Distancia UNAD
+				</div>
+			</footer>
+	</body>
+</html>
